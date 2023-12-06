@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - News Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    section {
+      padding: 20px;
+    }
+
+    .creators {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .creator {
+      text-align: center;
+      margin: 10px;
+    }
+
+    .creator img {
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+    }
+
+    .subscribe {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      max-width: 300px;
+      margin: auto;
+    }
+
+    form input,
+    form textarea,
+    form button {
+      margin-bottom: 10px;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    form button {
+      background-color: #333;
+      color: #fff;
+      cursor: pointer;
+    }
+.people div{
+  padding-bottom: 25px;
+  display: flex;
+  align-items: flex-start;
+}
+
+#people .people img {
+  width: 65px;
+  height: 65px;
+  object-fit: cover;
+  margin: 30px;
+}
+
+#people .people div p{
+  margin: 0;
+  font-size: 12px;
+  line-height: 25px;
+}
+
+#people .people div p span{
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+}
+
+#people .people {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  /* gap: 20px; */
+  text-align: center;
+}
+
+#people .people > div {
+  flex: 1;
+  max-width: 151px;
+  padding: 6px;
+  margin: 89px;
+}
+
+#people .people img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  margin: 0 auto 10px; /* Mengatur margin bawah untuk memberi ruang di bawah gambar */
+}
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>About Us - News Website</h1>
+  </header>
+
+  <section>
+    <h2>Website Overview</h2>
+    <p>Our news website is dedicated to providing timely and accurate news coverage on a variety of topics.</p>
+  </section>
+
+  <section>
+    <h2>Meet the Creators</h2>
+    <div class="creators">
+      <div class="creator">
+        <img src="creator1.jpg" alt="Creator 1">
+        <p>John Doe</p>
+        <p>Editor-in-Chief</p>
+      </div>
+      <!-- Repeat for other creators -->
+    </div>
+  </section>
+
+  <section class="subscribe">
+    <h2>Subscribe to Our Newsletter</h2>
+    <p>Stay updated with the latest news. Subscribe to our newsletter!</p>
+    <form>
+      <input type="email" placeholder="Your Email" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>Leave a Comment</h2>
+    <p>Have something to say? Leave a comment below.</p>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <textarea placeholder="Your Comment" rows="4" required></textarea>
+      <button type="submit">Submit Comment</button>
+    </form>
+  </section>
+
+  <section id="people">
+    <div class="people">
+        <div>
+            <img src="img/people/adam.png" alt="">
+            <p><span>Adam</span> Project Leader <br>+000 123 000 77 88 <br>User@gmail.com</p>
+        </div>
+        <div>
+            <img src="img/people/aji.png" alt="">
+            <p><span>W.Aji</span> Front-End<br>+000 123 000 77 88 <br>User@gmail.com</p>
+        </div>
+        <div>
+            <img src="img/people/san.png" alt="">
+            <p><span>San San</span> Front-End<br>+000 123 000 77 88 <br>User@gmail.com</p>
+        </div>
+        <div>
+            <img src="img/people/dede.png" alt="">
+            <p><span>D.Lukman</span> Back-End<br>+000 123 000 77 88 <br>User@gmail.com</p>
+        </div>
+    </div>
+    <div class="people">
+        <div>
+            <img src="img/people/asti.png" alt="">
+            <p><span>Astri</span> Back-End<br>+000 123 000 77 88 <br>User@gmail.com</p>
+        </div>
+        <div>
+            <img src="img/people/afridal.png" alt="">
+            <p><span>Afridal Kirani</span> Quality Assurance <br>+000 123 000 77 88 <br>User@gmail.com</p>
+        </div>
+        <div>
+            <img src="img/people/maria.png" alt="">
+            <p><span>Maria Gracia</span> Quality Assurance <br>+000 123 000 77 88 <br>User@gmail.com</p>
+        </div>
+    </div>
+</div>
+</section>
+
+</body>
+</html>

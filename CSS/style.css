@@ -13,22 +13,27 @@ header {
     display: inline;
 }
 
-nav {
+.nav-container {
+    width: 100%;
+    background-color: #0d1b2a;
     position: sticky;
     left: 0;
     right: 0;
     top: 0;
+}
+
+nav {
     display: flex;
-    justify-content: space-around;
-    background-color: #0d1b2a;
     align-items: center;
-    z-index: 4;
+    z-index: 2;
+    width: 85%;
+    margin: auto;
 }
 
 nav ul {
     display: flex;
     justify-content: space-between;
-    width: 35%;
+    width: 45%;
     list-style: none;
 }
 
@@ -43,7 +48,6 @@ nav ul a:hover {
 }
 
 
-
 .logo span {
     /* background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
     background: linear-gradient(to right, white, red);
@@ -54,7 +58,7 @@ nav ul a:hover {
 }
 
 .logo {
-    width: 40%;
+    width: 55%;
 }
 
 .blog a {
@@ -109,115 +113,140 @@ nav ul a:hover {
     transform: scale(0);
 }
 
-/* Baris konten*/
-.artikel {
-    width: 97%;
-    margin: auto;
-}
-
 .profil {
     width: 1rem;
     height: 1rem;
     text-decoration: none;
 }
 
-/*Slide foto*/
+/* Bagian Banner */
+
+.jumbotron-container {
+    width: 100%;
+    background-color: #1B263B;
+}
 
 .jumbotron {
     display: flex;
-    width: 100%;
+    width: 85%;
     height: 50vh;
+    margin: auto;
     /* background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.6)), url(../asset/alam.jpg); */
-    background-color: #1B263B;
     /* background-size: cover; */
     align-items: center;
-    justify-content: space-between;
 }
 
-/* .gambar {
-    width: 40%;
-    height: 50vh;
-    margin: 0 2%;
-    background-image: url(../asset/alam.jpg);
-    background-size: cover;
-} */
-
-.background {
-    width: 49%;
+.jumbotron-text {
+    width: 60%;
     color: white;
-    padding-left: 6%;
+    padding-right: 150px;
 }
 
-.background button {
-    background-color: rgb(87, 133, 18);
-    width: 100px;
-    border-radius: 10px;
-    height: 30px;
+.jumbotron-text button {
+    background-color: rgb(94, 157, 1);
+    border-radius: 20px;
+    padding: 10px 20px;
 }
 
-.background button:active {
-    background-color: #a3c0a3;
+.jumbotron-text button:active {
+    background-color: rgb(91, 183, 0);
 }
 
-.background a {
+.jumbotron-text a {
     text-decoration: none;
     color: white;
 }
 
+.slideimg {
+    width: 49%;
+    display: flex;
+    justify-content: center;
+}
 
+.cate {
+    margin-bottom: 70px;
+}
 
-/* Artikel 1*/
+.mySlides img {
+    width: 100%;
+    height: 250px;
+}
+
+.article-slide img {
+    height: 400px;
+}
+
+/* Bagian Artikel */
+
+.artikel {
+    width: 85%;
+    margin: auto;
+}
+
 .konten_utama {
     display: flex;
     margin-top: 25px;
     justify-content: space-between;
+    width: 100%;
 }
- 
+
 .konten_besar {
-   width: 50%;
-   background-image: url(../asset/alam.jpg);
+   width: 51%;
+   background-image: linear-gradient(to bottom, rgba(142, 142, 142, 0.3), rgba(43, 43, 43, 0.3)), url(../asset/alam.jpg); 
    background-size: cover;
-   border-radius: 15px;
-  
+   height: 350px;
 }
 
 .konten_kecil1 {
     display: flex;
     justify-content: space-between;
-    width: 49%;
+    width: 48%;
     flex-wrap: wrap;
 }
 
 .konten {
     width: 49%;
+    height: 169.5px;
     background-size: cover;
-    border-radius: 15px;
 }
 
+
 .konten1 {
-    background-image: url(../asset/ai.jpg);
+    background-image: linear-gradient(to bottom, rgba(63, 63, 63, 0.3), rgba(43, 43, 43, 0.3)), url(../asset/ai.jpg); 
     margin-bottom: 10px;
 }
 .konten2 {
-    background-image: url(../asset/bola.jpg);
+    background-image: linear-gradient(to bottom, rgba(63, 63, 63, 0.3), rgba(43, 43, 43, 0.3)), url(../asset/bola.jpg); 
     margin-bottom: 10px;
 }
 .konten3 {
-    background-image: url(../asset/alam.jpg);
+    background-image: linear-gradient(to bottom, rgba(63, 63, 63, 0.3), rgba(43, 43, 43, 0.3)), url(../asset/alam.jpg); 
 }
 .konten4 {
-    background-image: url(../asset/ai.jpg);
+    background-image: linear-gradient(to bottom, rgba(63, 63, 63, 0.3), rgba(43, 43, 43, 0.3)), url(../asset/ai.jpg); 
 }
 
 .text1 {
-    padding: 280px 20px 0 20px;
+    padding: 210px 20px 0 20px;
     color: white;
 }
 
-.text1 h2 a {
-    font-size: 22px;
+.text1 a, .big-text a {
+    font-size: 20px;
     color: white;
     text-decoration: none;
+}
+
+.text1 a:hover {
+    font-weight: bold;
+}
+
+.text1 .jenis, .big-text .jenis{
+    font-size: 15px;
+}
+
+.text1 span{
+    color: red;
 }
 
 .text1 p {
@@ -226,23 +255,209 @@ nav ul a:hover {
 
 .text { 
     color: white;
-    padding: 90px 10px 0 10px;
+    padding: 85px 10px 0 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 .text a {
     text-decoration: none;
     color: white;
     font-size: 17px;
+    margin-bottom: 10px;
 }
 
-.text p {
-    font-size: 13px;
+.text a:hover {
+    font-weight: bold;
+}
+
+.text .jenis {
+    font-size: 12px;
+}
+
+.text .jenis:hover {
+    font-weight: bold;
 }
 
 
+/* Bagian card */
 
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
 
-/* Kartu konten */
+.card {
+    width: 32%;
+}
+
+.card-image {
+    overflow: hidden;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 230px;
+}
+
+.card-image img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.5s ease-in-out;
+}
+
+.card-image:hover img {
+    transform: scale(1.1);
+}
+
+.card-content {
+    margin-bottom: 60px;
+}
+
+.head-card {
+    display: flex;
+}
+
+.divider {
+    border: none;
+    height: 1px;
+    background-color: #bfbdbd;
+    margin: 70px 0;
+}
+
+.category-card {
+    font-size: 14px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.category-card a {
+    text-decoration: none;
+    color: #555;
+}
+
+.category-card :hover {
+    color: #066bde;
+}
+
+.title {
+    margin-bottom: 10px;
+}
+
+.title a {
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #2a2a2a;
+}
+
+.title :hover {
+    font-size: 19px;
+    color: #555;
+}
+
+.description {
+    font-size: 14px;
+    color: #777;
+}
+
+.recommendation-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.image-container {
+    overflow: hidden;
+    width: 41%; 
+    height: 85px; 
+    margin-right: 20px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-container:hover img {
+    transform: scale(1.2); 
+}
+
+.recommendation-item a {
+    color: #4e4e4e;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.recommendation-item a:hover {
+    text-decoration: underline;
+}
+
+.isi-rekomendasi {
+    display: flex;
+    flex-direction: column;
+    width: 58%;
+}
+
+.isi-rekomendasi span {
+    font-size: 12px;
+    color: #8d8d8d;
+    margin-top: 10px;
+}
+/* Rekomendasi Article */
+
+.recomendation-wrap {
+    display: flex;
+}
+
+.article-recomendation {
+    flex-direction: column;
+    width: 70%;
+}
+
+.big-recomendation {
+    width: 100%;
+    background-image: linear-gradient(to bottom, rgba(142, 142, 142, 0.3), rgba(43, 43, 43, 0.3)), url(../asset/alam.jpg); 
+    background-size: cover;
+    height: 400px;
+}
+
+.big-text {
+    padding: 250px 20px 0 20px;
+    color: white;
+}
+
+.big-text a:hover {
+    font-weight: bold;
+}
+
+.little-recomendation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.little {
+    width: 32%;
+    background-size: cover;
+    height: 169.5px;
+}
+
+/* Bagian Aside */
+
+.recomendation-aside {
+    width: 29%;
+    margin-left: 20px;
+}
+
+.top-recomendation {
+    margin-top: -15px;
+}
+
+/* Kartu konten Recent Article */
 
 .kartu {
     display: flex;
@@ -250,30 +465,33 @@ nav ul a:hover {
     justify-content: space-between;
 }
 
-/* .jenis {
-    margin-top: 50px;
-} */
-
 .jenis span {
     color: red;
 }
 
 .kartu1 {
-    width: 32.5%;
+    width: 32%;
+}
+
+.kartu1 a:hover {
+    font-size: 19px;
+    color: #555;
 }
 
 .kartu1 img {
     width: 100%;
-    height: 200px;
-    border-radius: 15px;
+    height: 230px;
+    margin-bottom: 20px;
 }
 
 .kartu1 a {
     text-decoration: none;
     color: black;
+    font-size: 18px;
+    font-weight: bold;
 }
 
-.main_card{
+/* .main_card{
     display: flex;
     margin-top: 50px;
     justify-content: space-around;
@@ -286,8 +504,7 @@ nav ul a:hover {
 .main_card .top_artikel {
     width: 24%;
     padding-top: 45px;
-    margin-left: 10px;
-    padding-left: 20px;
+    padding-left: 15px;
 }
 
 .top_artikel .rekom {
@@ -307,9 +524,55 @@ nav ul a:hover {
 
 .isi_rekom h4 {
     font-size: 12px;
+} */
+
+
+/* Subscriber */
+
+.subscribe-container {
+    max-width: 60%;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+.subscribe-container h2 {
+    color: #333;
+}
+
+.subscribe-container p {
+    color: #555;
+}
+
+.subscribe-form {
+    width: 100%
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.button-subscribe button {
+    padding: 12.5px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+  
+}
+
+.button-subscribe button:hover {
+    background-color: #0056b3;
 }
 
 /*Footer*/
+
 footer {
     width: 100%;
     background-color: #415a77;
@@ -324,21 +587,52 @@ footer {
     border-bottom: 2px solid #1B263B;
 }
 
+.isi_footer a:hover {
+    font-weight: bold;
+}
+
 .isi {
     display: flex;
     flex-direction: column;
     width: 33%;
-    height: 133px;
     margin-top: 50px;
     border-right: 2px solid #1B263B;
     margin-bottom: 15px;
+    padding-left: 20px;
+    color: white;
+}
+
+.noborder {
+    border: none;
 }
 
 .isi a {
     text-decoration: none;
     color: white;
+    width: 80px;
     margin-bottom: 15px;
-    margin-left: 20px;
+}
+
+.isi h4 {
+    font-weight: normal;
+}
+
+.sosmed-icon {
+    display: flex; 
+    color: aliceblue;
+}
+
+.sosmed-icon img {
+    width: 25px;
+    height: 25px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.logofooter {
+    font-size: 11px;
+    color: #c8c8c8;
+    margin-top: 10px;
 }
 
 .copy {
@@ -347,6 +641,108 @@ footer {
     padding: 10px 0;
 }
 
+/* Bagian Page Artikel */
+.content {
+    width: 100%;
+    padding: 0 10px;
+}
+
+.content img {
+    width: 97%;
+    height: 530px;
+    border-radius: 10px;
+}
+
+.content p {
+    text-align: justify;
+}
+
+.aside_content {
+    width: 25%;
+    padding-top: 82px;
+}
+
+/* Bagian Page category */
+
+.category-type {
+    width: 100%;
+    height: 250px;
+    background-color: #777;
+    color: #bfbdbd;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.category-type h1 {
+    margin: auto;
+}
+
+/* Lama */
+
+.kumpulan_artikel {
+    margin-top: 50px;
+}
+
+.jenis1 span {
+    color: red;
+}
+
+.category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav .dual {
+    width: 70%;
+    font-size: 15px;
+}
+
+nav .logo1 {
+    font-size: 15px;
+}
+
+nav .logo1 span {
+    color: red;
+}
+
+/* Bagian Artikel Page Category */
+.konten_besar_category {
+    width: 70%;
+    background-image: url(../asset/alam.jpg);
+    background-size: cover;
+    border-radius: 15px;
+    height: 450px;
+}
+
+.konten_kecil_category {
+    width: 29%;
+}
+
+.konten_category {
+    width: 100%;
+    background-size: cover;
+    height: 219px;
+    border-radius: 15px;
+}
+
+.recent_article {
+    margin-top: 30px;
+}
+.garis {
+    width: 100%;
+    height: 2px;
+    background-color: #303435;
+    margin-top: 20px;
+}
+
+#technology, #nature, #healthy, #lifestyle, #trend {
+    margin-top: 70px;
+}
+
+
+
+/* Ukuran Tablet */
 @media only screen and (max-width: 1200px) {
     nav ul {
         width: 42%;
@@ -359,32 +755,56 @@ footer {
     .jumbotron {
         height: 42vh;
     }
+
+    /*Bagian Page Artikel */
+    .aside_content {
+        width: 27%;
+        padding-top: 110px;
+    }
+
+    /* .konten_utama {
+        flex-direction: column;
+    }
+
+    .konten_besar {
+        width: 100%;
+    }
+
+    .konten_kecil1 {
+        width: 100%;
+        margin-top: 20px;
+    } */
 }
 
+/* Ukuran handphone */
 @media only screen and (max-width: 576px) {
     .menu_tombol {
         display: flex;
+        padding-right: 15px;
     }
-    nav ul {
+
+    nav ul, .category ul {
         position: absolute;
         flex-direction: column;
         background-color: #303435;
         right: 0;
-        top: 50px;
+        top: 47px;
         height: 50vh;
         align-items: center;
         justify-content: space-evenly;
-        z-index: 2;
         width: 100%;
         transform: translateY(-150%);
         transition: all 1s;
     }
+
     nav ul.slide {
         transform: translateX(0);
     }
 
     .logo {
-        margin-right: 80px;
+        width: 50%;
+        margin-right: 50px;
+        font-size: 15px;
     }
 
     .background {
@@ -409,7 +829,7 @@ footer {
         flex-direction: column;
     }
 
-    .konten_besar {
+    .konten_besar, .konten_besar_category {
         width: 100%;
     }
 
@@ -441,11 +861,31 @@ footer {
 
     footer {
         padding: 0 20px;
+        font-size: 12px;
+    }
+    /*Bagian page Artikel*/
+
+    .content img {
+        height: 300px;
     }
 
-    .isi {
-        margin-right: 8px;
+   /*Bagian Page Category*/
+    .category {
+        flex-direction: row;
     }
+
+    .konten_kecil_category{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .konten_category {
+        width: 49%;
+    } 
+
+   
 }
 /* li.dropdown {
     display: inline-block;
